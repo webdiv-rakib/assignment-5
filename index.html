@@ -24,6 +24,7 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
+
     <!-- Google Font Import -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,12 +46,16 @@
         .color-3 {
             background-color: #1111110D;
         }
+
+        .color-4 {
+            background-color: #ffffff;
+        }
     </style>
 </head>
 
 <body class="font-lexend">
     <header>
-        <nav class="pt-6 border-solid bg-color-1 border-2 pb-16 color-1">
+        <nav class="pt-6 bg-color-1 pb-16 color-1">
             <div class="flex items-center justify-between">
                 <div class="pl-32">
                     <button class="btn btn-lg color-2">Blog</button>
@@ -66,47 +71,140 @@
                     <div>
                         <img src="assetes/coin.png" alt="">
                     </div>
-                    <h1 class="font-medium text-xl">5500 <span class="font-medium text-xl">BDT</span></h1>
+                    <h1 id="account-balance" class="font-medium text-xl">15500</h1>
+                    <h1 class="font-medium text-xl">BDT</h1>
                 </div>
             </div>
         </nav>
     </header>
-    <main>
+    <main class="color-4">
         <section>
             <div class="text-center mt-20 flex justify-center gap-4">
-                <div><button class="btn btn-lg font-semibold text-xl">Donation</button></div>
-                <div><button class="btn btn-lg font-semibold text-xl">History</button></div>
+                <div><button id="makeGreen" class="btn btn-lg font-semibold text-xl"">Donation</button></div>
+                <div><button id=" h-btn" class="btn btn-lg font-semibold text-xl">History</button></div>
             </div>
         </section>
         <section class="border-2 mx-32 rounded-2xl mt-8">
-            <div class="flex gap-6 justify-center p-10">
-                <div>
+            <div class="flex gap-6 justify-center p-10 items-center">
+                <div class="w-full ">
                     <img src="assetes/noakhali.png" alt="">
                 </div>
                 <div>
                     <div class="flex p-5 border-2 w-max gap-2 rounded-lg color-3 justify-center items-center">
                         <img src="assetes/coin.png" alt="">
-                        <h1>0 <span>BDT</span></h1>
+                        <h1 id="donation-1">2002500</h1>
+                        <h1>BDT</h1>
                     </div>
-                    <div>
-                        <h1>Donate for Flood at Noakhali, Bangladesh</h1>
-                        <p>The recent floods in Noakhali have caused significant damage to homes infrastructure.
-                            <br>Your
-                            donation will help provide essential supplies and to those affected by this disaster. <br>
+                    <div class="mt-4">
+                        <h1 class="font-bold text-xl">Donate for Flood at Noakhali, Bangladesh</h1>
+                        <p class="font-light mt-4">The recent floods in Noakhali have caused significant damage to homes
+                            infrastructure.
+                            Your
+                            donation will help provide essential supplies and to those affected by this disaster.
                             Every
-                            contribution, big or small, makes difference. Please join us in supporting the relief <br>
+                            contribution, big or small, makes difference. Please join us in supporting the relief
                             efforts and making a positive impact on the lives of those in need.
                         </p>
-                        <input type="text" placeholder="Write Donation Amount">
-                        <button>Donate Now</button>
+                        <div class="flex-col mt-6">
+                            <div>
+                                <input id="input-amount" class="border-2 w-full p-4 rounded-xl" type="text"
+                                    placeholder="Write Donation Amount">
+                            </div>
+                            <div class="mt-4">
+                                <button id="donation-btn-1" class="w-full p-4 rounded-xl color-2 btn btn-lg">Donate
+                                    Now</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+        </section>
+        <section class="border-2 mx-32 rounded-2xl mt-8">
+            <div class="flex gap-6 justify-center p-10 items-center">
+                <div class="w-full ">
+                    <img src="assetes/feni.png" alt="">
+                </div>
+                <div>
+                    <div class="flex p-5 border-2 w-max gap-2 rounded-lg color-3 justify-center items-center">
+                        <img src="assetes/coin.png" alt="">
+                        <h1>225000 <span>BDT</span></h1>
+                    </div>
+                    <div class="mt-4">
+                        <h1 class="font-bold text-xl">Donate for Flood Relief in Feni,Bangladesh</h1>
+                        <p class="font-light mt-4">The recent floods in Feni have devastated local communities, leading
+                            to severe disruption and loss. Your generous donation will help provide immediate aid,
+                            including food, clean water, and medical supplies, to those affected by this calamity.
+                            Together, we can offer crucial support and help rebuild lives in the aftermath of this
+                            disaster.
+                        </p>
+                        <div class="flex-col mt-6">
+                            <div>
+                                <input class="border-2 w-full p-4 rounded-xl" type="text"
+                                    placeholder="Write Donation Amount">
+                            </div>
+                            <div class="mt-4">
+                                <button class="w-full p-4 rounded-xl color-2 btn btn-lg">Donate Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="border-2 mx-32 rounded-2xl mt-8">
+            <div class="flex gap-6 justify-center p-10 items-center">
+                <div class="w-full ">
+                    <img src="assetes/quota-protest.png" alt="">
+                </div>
+                <div>
+                    <div class="flex p-5 border-2 w-max gap-2 rounded-lg color-3 justify-center items-center">
+                        <img src="assetes/coin.png" alt="">
+                        <h1>10000 <span>BDT</span></h1>
+                    </div>
+                    <div class="mt-4">
+                        <h1 class="font-bold text-xl">Donate for Flood at Noakhali, Bangladesh</h1>
+                        <p class="font-light mt-4">The recent floods in Noakhali have caused significant damage to homes
+                            infrastructure.
+                            Your
+                            donation will help provide essential supplies and to those affected by this disaster.
+                            Every
+                            contribution, big or small, makes difference. Please join us in supporting the relief
+                            efforts and making a positive impact on the lives of those in need.
+                        </p>
+                        <div class="flex-col mt-6">
+                            <div>
+                                <input class="border-2 w-full p-4 rounded-xl" type="text"
+                                    placeholder="Write Donation Amount">
+                            </div>
+                            <div class="mt-4">
+                                <button class="w-full p-4 rounded-xl color-2 btn btn-lg">Donate Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <!-- Open the modal using ID.showModal() method -->
+            <button class="btn" onclick="my_modal_1.showModal()">open modal</button>
+            <dialog id="my_modal_1" class="modal">
+                <div class="modal-box">
+                    <h3 class="text-lg font-bold">Hello!</h3>
+                    <p class="py-4">Press ESC key or click the button below to close</p>
+                    <div class="modal-action">
+                        <form method="dialog">
+                            <!-- if there is a button in form, it will close the modal -->
+                            <button class="btn">Close</button>
+                        </form>
+                    </div>
+                </div>
+            </dialog>
         </section>
     </main>
     <footer>
 
     </footer>
+    <script src="js/add-donation.js"></script>
+    <script src="js/functions.js"></script>
 </body>
 
 </html>
