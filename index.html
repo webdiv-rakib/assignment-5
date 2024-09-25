@@ -14,8 +14,6 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
-                        'color-1': '#F9F7F3',
-                        'color-2': '#B4F461',
                     }
                 }
             }
@@ -42,6 +40,10 @@
 
         .color-2 {
             background-color: #B4F461;
+        }
+
+        .color-3 {
+            background-color: #1111110D;
         }
     </style>
 </head>
@@ -76,25 +78,27 @@
                 <div><button class="btn btn-lg font-semibold text-xl">History</button></div>
             </div>
         </section>
-        <section>
-            <div class="hero mt-10">
-                <div class="hero-content flex-col lg:flex-row gap-8">
-                    <img src="assetes/noakhali.png" class="max-w-sm rounded-lg shadow-2xl" />
+        <section class="border-2 mx-32 rounded-2xl mt-8">
+            <div class="flex gap-6 justify-center p-10">
+                <div>
+                    <img src="assetes/noakhali.png" alt="">
+                </div>
+                <div>
+                    <div class="flex p-5 border-2 w-max gap-2 rounded-lg color-3 justify-center items-center">
+                        <img src="assetes/coin.png" alt="">
+                        <h1>0 <span>BDT</span></h1>
+                    </div>
                     <div>
-                        <div class="flex items-center border-2 w-max p-4 gap-2 rounded-lg bg-base-200">
-                            <img src="assetes/coin.png" alt="">
-                            <h3>0 <span>BDT</span></h3>
-                        </div>
-                        <h1 class="font-bold text-sm mt-4">Donate for Flood at Noakhali, Bangladesh</h1>
-                        <p class="font-light mt-4"> The recent floods in Noakhali have caused significant damage to homes infrastructure. Your
-                            donation will help provide essential supplies and to those affected by this disaster. Every
-                            contribution, big or small, makes difference. Please join us in supporting the relief
-                            efforts and making a positive impact on the lives of those in need.</p>
-                        <div class="flex">
-                            <input type="text" placeholder="Write Donation Amount"
-                                class="input input-bordered w-full max-w-xs mt-6" />
-                            <button class="btn btn-wide">Wide</button>
-                        </div>
+                        <h1>Donate for Flood at Noakhali, Bangladesh</h1>
+                        <p>The recent floods in Noakhali have caused significant damage to homes infrastructure.
+                            <br>Your
+                            donation will help provide essential supplies and to those affected by this disaster. <br>
+                            Every
+                            contribution, big or small, makes difference. Please join us in supporting the relief <br>
+                            efforts and making a positive impact on the lives of those in need.
+                        </p>
+                        <input type="text" placeholder="Write Donation Amount">
+                        <button>Donate Now</button>
                     </div>
                 </div>
             </div>
