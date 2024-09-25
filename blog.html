@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Donate BD</title>
+
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+
+    <!-- Lexend google font CND -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <!-- tailwind and daisy UI CDN  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .font-lexend {
+            font-family: "Lexend", sans-serif;
+        }
+
+        .color-1 {
+            background-color: #F9F7F3;
+        }
+
+        .color-2 {
+            background-color: #B4F461;
+        }
+
+        .color-3 {
+            background-color: #1111110D;
+        }
+
+        .color-4 {
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+
+<body class="font-lexend">
+    <header class="sticky top-0 z-50"></header>
+    <nav class="pt-6 bg-color-1 pb-16 color-1">
+        <div class="flex items-center justify-between">
+            <div class="pl-32">
+                <a href="index.html"><button class="btn btn-lg color-2">Home</button></a>
+            </div>
+            <div class="flex items-center justify-center gap-4">
+                <div>
+                    <img src="assetes/logo.png" alt="">
+
+                </div>
+                <h1 class="font-semibold text-xl">Donate Bangladesh</h1>
+            </div>
+            <div class="flex items-center gap-3 pr-32">
+                <div>
+                    <img src="assetes/coin.png" alt="">
+                </div>
+                <h1 id="account-balance" class="font-medium text-xl">15500</h1>
+                <h1 class="font-medium text-xl">BDT</h1>
+            </div>
+        </div>
+    </nav>
+    </header>
+    <!-- <header class="sticky top-0 shadow-sm z-10">
+        Sticky navbar section 
+        <nav class="bg-amber-50 flex justify-around items-center py-5">
+            blog button 
+            <div>
+                <a href="index.html"><button class="btn px-7 btn-color hover:bg-[#aded5a]">Home</button></a>
+            </div>
+            brand icon & text
+            <div class="flex items-center gap-2">
+                <img src="assetes/logo.png" alt="brand-icon">
+                <a href="#">
+                    <h1 class="font-bold hidden lg:block">Donate Bangladesh</h1>
+                </a>
+            </div>
+            total donation TK
+            <div class="flex items-center gap-2">
+                <img src="assetes/coin.png" alt="taka-icon">
+                <p>5500</p>
+                <p>BDT</p>
+            </div>
+        </nav>
+    </header> -->
+    <main>
+        <!-- Donate field section start -->
+        <section class="max-w-screen-xl mx-auto my-14">
+            <h1 class="mb-16 font-bold text-4xl">Important Questions:-</h1>
+            <div class="join join-vertical max-w-screen-xl -z-10">
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                    <input type="radio" name="my-accordion-4" checked="checked" />
+                    <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+                    <div class="collapse-content">
+                        <p class="text-justify secondary-color">The Document Object Model (DOM) is a programming
+                            interface that represents HTML and XML documents as a tree structure. Each element,
+                            attribute, and piece of text in a document is a node in this tree, allowing developers to
+                            dynamically interact with and manipulate web content using languages like JavaScript. The
+                            DOM enables responsive features, event handling, and is standardized by the W3C, ensuring
+                            consistent behavior across different web browsers. It is essential for creating interactive
+                            and user-friendly web applications.</p>
+                    </div>
+                </div>
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                    <input type="radio" name="my-accordion-4" />
+                    <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+                    <div class="collapse-content">
+                        <p class="text-justify secondary-color">
+                            To select an element from the DOM, you can use various JavaScript methods. The most common
+                            is document.querySelector(), which allows you to target the first element that matches a
+                            specified CSS selector, giving you flexibility with classes, IDs, and other attributes. For
+                            example, document.querySelector('#myId') selects the element with the ID "myId."
+                            Alternatively, document.getElementById() can be used for direct ID selection, while
+                            getElementsByClassName() and getElementsByTagName() allow for selecting groups of elements
+                            based on their class or tag, respectively. These methods enable you to interact with and
+                            manipulate the web page's structure and content dynamically.</p>
+                    </div>
+                </div>
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                    <input type="radio" name="my-accordion-4" />
+                    <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM,
+                        and why is it useful?</div>
+                    <div class="collapse-content">
+                        <p class="text-justify secondary-color">
+                            Event delegation is a technique in the DOM where you attach a single event listener to a
+                            parent element instead of multiple listeners on each child element. When an event occurs on
+                            a child, it bubbles up to the parent, which can then handle it. This method is particularly
+                            useful because it improves performance by reducing the number of event listeners needed,
+                            especially in cases with many child elements. It also simplifies the management of events,
+                            as you only need to write and maintain one listener. Additionally, it allows for seamless
+                            handling of dynamically added child elements, since they automatically inherit the parent’s
+                            event listener. Overall, event delegation makes your code more efficient and easier to
+                            manage.</p>
+                    </div>
+                </div>
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                    <input type="radio" name="my-accordion-4" />
+                    <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and
+                        styles using the DOM?</div>
+                    <div class="collapse-content">
+                        <p class="text-justify secondary-color">To manipulate an element's attributes and styles using
+                            the DOM, you primarily interact with the element's properties and methods in JavaScript.
+                            Attributes can be modified using the setAttribute() method, which allows you to change
+                            existing attributes or add new ones, such as modifying the src of an image or the href of a
+                            link. Additionally, you can access certain attributes directly through properties associated
+                            with the element. For styles, you can use the style property to change CSS styles directly.
+                            This allows you to modify aspects like colors, sizes, and positioning by setting individual
+                            CSS properties. By dynamically altering attributes and styles, you can create interactive
+                            and responsive web pages, enhancing user experience and visual appeal.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Donate field section end -->
+    </main>
+</body>
+
+</html>

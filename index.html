@@ -54,11 +54,11 @@
 </head>
 
 <body class="font-lexend">
-    <header>
-        <nav class="pt-6 bg-color-1 pb-16 color-1 sticky top-0 z-50">
+    <header class="sticky top-0 z-50">
+        <nav class="pt-6 bg-color-1 pb-16 color-1">
             <div class="flex items-center justify-between">
                 <div class="pl-32">
-                    <button class="btn btn-lg color-2">Blog</button>
+                    <a href="blog.html"><button class="btn btn-lg color-2">Blog</button></a>
                 </div>
                 <div class="flex items-center justify-center gap-4">
                     <div>
@@ -76,14 +76,12 @@
                 </div>
             </div>
         </nav>
+        <div class="text-center pt-6 flex justify-center gap-4 bg-white pb-6">
+            <div><button id="makeGreen" class="btn btn-lg font-semibold text-xl"">Donation</button></div>
+            <div><button id=" hbtn" class="btn btn-lg font-semibold text-xl">History</button></div>
+        </div>
     </header>
     <main class="color-4">
-        <section>
-            <div class="text-center mt-20 flex justify-center gap-4">
-                <div><button id="makeGreen" class="btn btn-lg font-semibold text-xl"">Donation</button></div>
-                <div><button id=" h-btn" class="btn btn-lg font-semibold text-xl">History</button></div>
-            </div>
-        </section>
         <!-- Card-1 -->
         <section class="border-2 mx-32 rounded-2xl mt-8">
             <div class="flex gap-6 justify-center p-10 items-center">
@@ -190,6 +188,11 @@
                 </div>
             </div>
         </section>
+        <section id="donate-history" class="max-w-screen-xl mx-auto py-10 hidden">
+            <div id="individual-donate-history">
+                <!-- show dynamic History card  -->
+            </div>
+        </section>
     </main>
     <footer>
 
@@ -198,6 +201,7 @@
     <script src="js/add-donation-2.js"></script>
     <script src="js/add-donation-3.js"></script>
     <script src="js/functions.js"></script>
+    <script src="js/history.js"></script>
 </body>
 
 </html>
