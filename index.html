@@ -55,20 +55,20 @@
 
 <body class="font-lexend">
     <header class="sticky top-0 z-50">
-        <nav class="pt-6 bg-color-1 pb-16 color-1">
-            <div class="flex items-center justify-between">
-                <div class="pl-32">
+        <nav class="pt-6 bg-color-1 md:pb-16 color-1 pb-4">
+            <div class="md:flex md:items-center md:justify-between flex justify-evenly">
+                <div class="md:pl-32">
                     <a href="blog.html"><button class="btn btn-lg color-2">Blog</button></a>
                 </div>
                 <div class="flex items-center justify-center gap-4">
-                    <div>
+                    <div class="hidden md:block">
                         <img src="assetes/logo.png" alt="">
 
                     </div>
                     <h1 class="font-semibold text-xl">Donate Bangladesh</h1>
                 </div>
-                <div class="flex items-center gap-3 pr-32">
-                    <div>
+                <div class="flex items-center gap-3 md:pr-32">
+                    <div class="hidden md:block">
                         <img src="assetes/coin.png" alt="">
                     </div>
                     <h1 id="account-balance" class="font-medium text-xl">15500</h1>
@@ -78,19 +78,20 @@
         </nav>
         <div class="text-center pt-6 flex justify-center gap-4  pb-6 backdrop-blur-md">
             <div><button id="donate-tab-button" class="btn btn-lg font-semibold text-xl color-2">Donation</button></div>
-            <div><button id="history-tab-button" class="btn btn-lg font-semibold text-xl bg-white">History</button></div>
+            <div><button id="history-tab-button" class="btn btn-lg font-semibold text-xl bg-white">History</button>
+            </div>
         </div>
     </header>
     <main class="color-4">
         <div id="donation-cards" class="block">
             <!-- Card-1 -->
-            <section class="border-2 mx-32 rounded-2xl mt-8">
-                <div class="flex gap-6 justify-center p-10 items-center">
+            <section class="border-2 md:mx-32 rounded-2xl mt-8 ">
+                <div class="md:flex gap-6 md:justify-center p-10 items-center">
                     <div class="w-full ">
                         <img src="assetes/noakhali.png" alt="">
                     </div>
                     <div>
-                        <div class="flex p-5 border-2 w-max gap-2 rounded-lg color-3 justify-center items-center">
+                        <div class="flex p-5 border-2 w-max gap-2 rounded-lg color-3 justify-center items-center mt-4">
                             <img src="assetes/coin.png" alt="">
                             <h1 id="donation-1">2002500</h1>
                             <h1>BDT</h1>
@@ -121,13 +122,13 @@
                 </div>
             </section>
             <!-- Card-2 -->
-            <section class="border-2 mx-32 rounded-2xl mt-8">
-                <div class="flex gap-6 justify-center p-10 items-center">
+            <section class="border-2 md:mx-32 rounded-2xl mt-8">
+                <div class="md:flex gap-6 justify-center p-10 items-center">
                     <div class="w-full ">
                         <img src="assetes/feni.png" alt="">
                     </div>
                     <div>
-                        <div class="flex p-5 border-2 w-max gap-2 rounded-lg color-3 justify-center items-center">
+                        <div class="flex p-5 border-2 w-max gap-2 rounded-lg color-3 justify-center items-center mt-4">
                             <img src="assetes/coin.png" alt="">
                             <h1 id="donation-2">225000</h1>
                             <h1>BDT</h1>
@@ -156,13 +157,13 @@
                 </div>
             </section>
             <!-- Card 3 -->
-            <section class="border-2 mx-32 rounded-2xl mt-8">
-                <div class="flex gap-6 justify-center p-10 items-center">
+            <section class="border-2 md:mx-32 rounded-2xl mt-8">
+                <div class="md:flex gap-6 justify-center p-10 items-center">
                     <div class="w-full ">
                         <img src="assetes/quota-protest.png" alt="">
                     </div>
                     <div>
-                        <div class="flex p-5 border-2 w-max gap-2 rounded-lg color-3 justify-center items-center">
+                        <div class="flex p-5 border-2 w-max gap-2 rounded-lg color-3 justify-center items-center mt-4">
                             <img src="assetes/coin.png" alt="">
                             <h1 id="donation-3">10000</h1>
                             <h1>BDT</h1>
@@ -194,8 +195,22 @@
             </section>
         </div>
         <section id="donate-history" class="max-w-screen-xl mx-auto py-10 hidden space-y-2">
-            
+
         </section>
+
+        <dialog id="my_modal_5" class="hidden modal modal-bottom sm:modal-middle">
+            <div class="modal-box">
+                <h3 class="text-4xl font-bold text-center">Congrates!</h3>
+                <div class="flex justify-center py-5"><img src="assetes/coin.png" alt=""></div>
+                <p class="py-4 text-center">You Have Donated for Humankind</p>
+                <p class="py-4 font-bold text-xl text-center">Successfully</p>
+                <div class="modal-action">
+                    <form method="dialog">
+                        <button id="btn-close-modal" class="btn w-full btn-color">close confirmation</button>
+                    </form>
+                </div>
+            </div>
+        </dialog>
     </main>
     <footer>
 

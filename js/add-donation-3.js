@@ -13,6 +13,11 @@ document.getElementById("donation-btn-3").addEventListener('click', function (ev
         console.log(updateDonation);
         document.getElementById("donation-3").innerText = updateDonation;
         document.getElementById("account-balance").innerText = updateBalance;
+        
+         // open modal 
+         const modal = document.getElementById("my_modal_5");
+         modal.classList.remove('hidden');
+         my_modal_5.showModal();
     }
     else {
         alert("Enter an amount");

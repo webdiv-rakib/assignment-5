@@ -21,29 +21,29 @@ donationButtonOne.onclick = function () {
     const div = document.createElement('div');
     div.classList = 'border-2 p-8 rounded-lg border-grey-400'
     div.innerHTML = `
-        <h3 class = "font-bold text-lg">${donationAmountOne} Taka is Donated for ${locationOne}</h3>
+        <h3 class = "font-bold text-lg">${donationAmountOne} Taka is ${locationOne}</h3>
         <p>${dateTime}</p>
     `
     historySection.appendChild(div);
 }
 donationButtonTwo.onclick = function () {
-    const donationAmountTwo = donationAmountOneElement.value;
+    const donationAmountTwo = donationAmountTwoElement.value;
     console.log(donationAmountTwo);
     const div = document.createElement('div');
     div.classList = 'border-2 p-8 rounded-lg border-grey-400'
     div.innerHTML = `
-        <h3 class = "font-bold text-lg">${donationAmountTwo} Taka is Donated for ${locationTwo}</h3>
+        <h3 class = "font-bold text-lg">${donationAmountTwo} Taka is  ${locationTwo}</h3>
         <p>${dateTime}</p>
     `
     historySection.appendChild(div);
 }
 donationButtonThree.onclick = function () {
-    const donationAmountThree = donationAmountOneElement.value;
+    const donationAmountThree = donationAmountThreeElement.value;
     console.log(donationAmountThree);
     const div = document.createElement('div');
     div.classList = 'border-2 p-8 rounded-lg border-grey-400'
     div.innerHTML = `
-        <h3 class = "font-bold text-lg">${donationAmountThree} Taka is Donated for ${locationThree}</h3>
+        <h3 class = "font-bold text-lg">${donationAmountThree} Taka is  ${locationThree}</h3>
         <p>${dateTime}</p>
     `
     historySection.appendChild(div);
