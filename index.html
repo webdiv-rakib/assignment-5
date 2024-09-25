@@ -1,14 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment - 5</title>
+
+    <!-- TailWind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'color-1': '#F9F7F3',
+                        'color-2': '#B4F461',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- daisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Font Import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <style>
+        .font-lexend {
+            font-family: "Lexend", sans-serif;
+        }
+
+        .color-1 {
+            background-color: #F9F7F3;
+        }
+
+        .color-2 {
+            background-color: #B4F461;
+        }
+    </style>
 </head>
 
-<body>
-    <h1>Assignment - 5</h1>
+<body class="font-lexend">
+    <header>
+        <nav class="pt-6 border-solid bg-color-1 border-2 pb-16 color-1">
+            <div class="flex items-center justify-between">
+                <div class="pl-32">
+                    <button class="btn btn-lg color-2">Blog</button>
+                </div>
+                <div class="flex items-center justify-center gap-4">
+                    <div>
+                        <img src="assetes/logo.png" alt="">
+
+                    </div>
+                    <h1 class="font-semibold text-xl">Donate Bangladesh</h1>
+                </div>
+                <div class="flex items-center gap-3 pr-32">
+                    <div>
+                        <img src="assetes/coin.png" alt="">
+                    </div>
+                    <h1 class="font-medium text-xl">5500 <span class="font-medium text-xl">BDT</span></h1>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="text-center mt-20 flex justify-center gap-4">
+                <div><button class="btn btn-lg font-semibold text-xl">Donation</button></div>
+                <div><button class="btn btn-lg font-semibold text-xl">History</button></div>
+            </div>
+        </section>
+        <section>
+            <div class="hero mt-10">
+                <div class="hero-content flex-col lg:flex-row gap-8">
+                    <img src="assetes/noakhali.png" class="max-w-sm rounded-lg shadow-2xl" />
+                    <div>
+                        <div class="flex items-center border-2 w-max p-4 gap-2 rounded-lg bg-base-200">
+                            <img src="assetes/coin.png" alt="">
+                            <h3>0 <span>BDT</span></h3>
+                        </div>
+                        <h1 class="font-bold text-sm mt-4">Donate for Flood at Noakhali, Bangladesh</h1>
+                        <p class="font-light mt-4"> The recent floods in Noakhali have caused significant damage to homes infrastructure. Your
+                            donation will help provide essential supplies and to those affected by this disaster. Every
+                            contribution, big or small, makes difference. Please join us in supporting the relief
+                            efforts and making a positive impact on the lives of those in need.</p>
+                        <div class="flex">
+                            <input type="text" placeholder="Write Donation Amount"
+                                class="input input-bordered w-full max-w-xs mt-6" />
+                            <button class="btn btn-wide">Wide</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
 </body>
 
 </html>
