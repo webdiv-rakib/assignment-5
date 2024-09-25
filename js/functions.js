@@ -1,3 +1,15 @@
+const donateButton = document.getElementById("donate-tab-button");
+const historyButton = document.getElementById("history-tab-button");
+const donationTab = document.getElementById("donation-cards");
+const historyTab = document.getElementById("donate-history");
+
+
+
+
+
+
+
+
 function getInputFieldById(id) {
     const inputField = document.getElementById(id).value;
     const inputFieldNumber = parseFloat(inputField);
@@ -10,12 +22,20 @@ function getInputTextById(id) {
     return inputTextNumber;
 
 }
+donateButton.onclick = function () {
+    donateButton.style.backgroundColor = '#B4F461';
+    historyButton.style.backgroundColor = '#fff';
+    donationTab.classList.add('block');
+    donationTab.classList.remove('hidden');
+    historyTab.classList.add('hidden');
+    historyTab.classList.remove('block');
+}
+historyButton.onclick = function () {
+    historyButton.style.backgroundColor = '#B4F461';
+    donateButton.style.backgroundColor = '#fff';
+    historyTab.classList.add('block');
+    historyTab.classList.remove('hidden');
+    donationTab.classList.add('hidden');
+    donateButton.classList.remove('block');
+}
 
-const btn = document.getElementById("makeGreen");
-btn.onclick = function () {
-    btn.style.backgroundColor = '#B4F461';
-}
-const btn2 = document.getElementById("h-btn");
-btn2.onclick = function () {
-    btn2.style.backgroundColor = '#B4F461';
-}
